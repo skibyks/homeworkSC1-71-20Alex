@@ -1,0 +1,45 @@
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: black;
+}
+
+td {
+  border-left-width: 1px;
+  border-left-color: black;
+  border-left-style: dotted;
+}
+th {
+  border-left-width: 1px;
+  border-left-color: black;
+  border-left-style: dotted;
+}
+th:first-child {
+  border: none;
+}
+tr:first-child {
+  background-color: gray;
+  color: aliceblue;
+  text-align: center;
+}
+tr {
+  text-align: left;
+}
+caption {
+  caption-side: bottom;
+}
+tr:hover {
+  background: slategray;
+  color: aliceblue;
+}
+tr:nth-child(2n + 3) {
+  background: silver;
+  color: aliceblue;
+}
+tr:hover:nth-child(2n + 3) {
+  background: slategray;
+  color: aliceblue;
+}

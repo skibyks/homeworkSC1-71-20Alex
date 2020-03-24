@@ -1,0 +1,35 @@
+p {
+  padding: 5px;
+  border: 1px darkgray solid;
+  margin: 5px;
+  -webkit-border-radius: 0px 10px 0px 10px;
+  -moz-border-radius: 0px 10px 0px 10px;
+  border-radius: 0px 10px 0px 10px;
+}
+a[href^="https://"] {
+  background: url(img/pic/extref.png) no-repeat 5% 5px;
+  padding-left: 13px;
+}
+p > a[href^="files/document.doc"] {
+  background: url(img/pic/logo-doc.jpg) no-repeat 100% 1px;
+  padding-right: 19px;
+}
+a[href^="files/document.pdf"] {
+  background: url(img/pic/logo-pdf.png) no-repeat 100% -1px;
+  padding-right: 19px;
+}
+p > a[href="files/document.zip"] {
+  background: url(img/pic/logo-zip.gif) no-repeat 100% 1px;
+  padding-right: 19px;
+}
+ul {
+  list-style-image: url(img/pic/logo-list.jpg);
+}
+li > a[href^="files/document.doc"]:hover {
+  background: url(img/pic/logo-doc.jpg) no-repeat 100% 1px;
+  padding-right: 19px;
+}
+li > a[href="files/document.zip"]:hover {
+  background: url(img/pic/logo-zip.gif) no-repeat 100% 1px;
+  padding-right: 19px;
+}
