@@ -1,0 +1,35 @@
+table {
+  border-collapse: collapse;
+  border: 5px solid black;
+
+  counter-reset: schetchik;
+}
+td {
+  background: black;
+  width: 100px;
+  height: 100px;
+}
+tr {
+  height: 100px;
+  width: 100px;
+}
+tr:nth-child(odd) td:nth-child(odd) {
+  background: white;
+}
+
+tr:nth-child(even) td:nth-child(even) {
+  background: white;
+}
+table {
+  counter-reset: rowNumber;
+}
+
+table tr {
+  counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}

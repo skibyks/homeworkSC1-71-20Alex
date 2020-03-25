@@ -7,23 +7,23 @@ p {
   border-radius: 0px 10px 0px 10px;
 }
 a[href^="https://"]::before {
-  content: url(img/pic/extref.png);
+  content: url(../img/pic/extref.png);
 }
 p > a[href^="files/document.doc"]::after {
-  content: url(img/pic/logo-doc.jpg);
+  content: url(../img/pic/logo-doc.jpg);
 }
 a[href^="files/document.pdf"]::after {
-  content: url(img/pic/logo-pdf.png);
+  content: url(../img/pic/logo-pdf.png);
 }
 p > a[href="files/document.zip"]::after {
-  content: url(img/pic/logo-zip.gif);
+  content: url(../img/pic/logo-zip.gif);
 }
 ul {
-  list-style-image: url(img/pic/logo-list.jpg);
+  list-style-image: url(../img/pic/logo-list.jpg);
 }
 li > a[href^="files/document.doc"]:hover::after {
-  content: url(img/pic/logo-doc.jpg);
+  content: url(../img/pic/logo-doc.jpg);
 }
 li > a[href="files/document.zip"]:hover::after {
-  content: url(img/pic/logo-zip.gif);
+  content: url(../img/pic/logo-zip.gif);
 }
