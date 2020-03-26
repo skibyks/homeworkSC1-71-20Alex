@@ -34,6 +34,7 @@ caption {
 tr:hover {
   background: slategray;
   color: aliceblue;
+  cursor: pointer;
 }
 tr:nth-child(2n + 3) {
   background: silver;
