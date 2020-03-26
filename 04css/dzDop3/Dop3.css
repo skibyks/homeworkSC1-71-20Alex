@@ -8,6 +8,8 @@ td {
   background: black;
   width: 100px;
   height: 100px;
+  color: white;
+  text-align: center;
 }
 tr {
   height: 100px;
@@ -15,21 +17,19 @@ tr {
 }
 tr:nth-child(odd) td:nth-child(odd) {
   background: white;
+  color: black;
 }
 
 tr:nth-child(even) td:nth-child(even) {
   background: white;
+  color: black;
 }
-table {
-  counter-reset: rowNumber;
+.list {
+  list-style: none;
+  counter-reset: list 65;
 }
-
-table tr {
-  counter-increment: rowNumber;
-}
-
-table tr td:first-child::before {
-  content: counter(rowNumber);
-  min-width: 1em;
-  margin-right: 0.5em;
+td::before {
+  counter-increment: list -1;
+  content: counter(list) "";
+  font-size: 76px;
 }
